@@ -28,27 +28,27 @@ plt.ylim((-2, 3))
 
 # set new ticks
 new_ticks = np.linspace(-1, 2, 5)
-plt.xticks(new_ticks)
+plt.xticks(new_ticks)#把x轴换上新的小标，-1 to 2 step=5
 # set tick labels
 plt.yticks([-2, -1.8, -1, 1.22, 3],
-           ['$really\ bad$', '$bad$', '$normal$', '$good$', '$really\ good$'])
-# to use '$ $' for math text and nice looking, e.g. '$\pi$'
+           [r'$really\ bad$', r'$bad$', r'$normal$',r'$good$', r'$really\ good$'])
+# to use '$ $' for math text and nice looking, e.g. '$\pi$' r正则表达
 
 # gca = 'get current axis'
 ax = plt.gca()
-ax.spines['right'].set_color('none')
-ax.spines['top'].set_color('none')
+ax.spines['right'].set_color('none')#更改右框线
+ax.spines['top'].set_color('none')#更改上框线
 
-ax.xaxis.set_ticks_position('bottom')
+ax.xaxis.set_ticks_position('bottom')#把底框线设置为x轴
 # ACCEPTS: [ 'top' | 'bottom' | 'both' | 'default' | 'none' ]
 
-ax.spines['bottom'].set_position(('data', 0))
+ax.spines['bottom'].set_position(('data', 0))#把x轴设置为y=0的垂线，类似方法:"outward","axes"
 # the 1st is in 'outward' | 'axes' | 'data'
 # axes: percentage of y axis
 # data: depend on y data
 
-ax.yaxis.set_ticks_position('left')
+ax.yaxis.set_ticks_position('left')#把左框线设置为y轴
 # ACCEPTS: [ 'left' | 'right' | 'both' | 'default' | 'none' ]
 
-ax.spines['left'].set_position(('data',0))
+ax.spines['left'].set_position(('data',0))#把y轴设置为x=0的水平线
 plt.show()
