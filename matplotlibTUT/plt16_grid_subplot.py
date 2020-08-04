@@ -17,9 +17,9 @@ import matplotlib.gridspec as gridspec
 # method 1: subplot2grid
 ##########################
 plt.figure()
-ax1 = plt.subplot2grid((3, 3), (0, 0), colspan=3)  # stands for axes
+ax1 = plt.subplot2grid((3, 3), (0, 0), colspan=3)  # stands for axes figure规格 axise起始位置 列跨度
 ax1.plot([1, 2], [1, 2])
-ax1.set_title('ax1_title')
+ax1.set_title('ax1_title')#注意axise与figure 方法 ax.set_(label) plt.(label)
 ax2 = plt.subplot2grid((3, 3), (1, 0), colspan=2)
 ax3 = plt.subplot2grid((3, 3), (1, 2), rowspan=2)
 ax4 = plt.subplot2grid((3, 3), (2, 0))
@@ -42,7 +42,7 @@ ax10 = plt.subplot(gs[-1, -2])
 # method 3: easy to define structure
 ####################################
 f, ((ax11, ax12), (ax13, ax14)) = plt.subplots(2, 2, sharex=True, sharey=True)
-ax11.scatter([1,2], [1,2])
+ax11.scatter([1,2], [1,2])#x轴范围 y轴范围
 
 plt.tight_layout()
 plt.show()
