@@ -24,7 +24,7 @@ for the value of "origin"= ['upper', 'lower'], check this:
 http://matplotlib.org/examples/pylab_examples/image_origin.html
 """
 plt.imshow(a, interpolation='nearest', cmap='bone', origin='lower')
-plt.colorbar(shrink=.92)
+plt.colorbar(shrink=.92)#右方标尺图压缩至92%
 
 plt.xticks(())
 plt.yticks(())
