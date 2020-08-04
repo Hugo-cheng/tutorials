@@ -21,11 +21,11 @@ def f(x,y):
 n = 256
 x = np.linspace(-3, 3, n)
 y = np.linspace(-3, 3, n)
-X,Y = np.meshgrid(x, y)
+X,Y = np.meshgrid(x, y)#将x,y网格化
 
 # use plt.contourf to filling contours
 # X, Y and value for (X,Y) point
-plt.contourf(X, Y, f(X, Y), 8, alpha=.75, cmap=plt.cm.hot)
+plt.contourf(X, Y, f(X, Y), 8, alpha=.75, cmap=plt.cm.hot)#8代表圈的个数
 
 # use plt.contour to add contour lines
 C = plt.contour(X, Y, f(X, Y), 8, colors='black', linewidth=.5)
