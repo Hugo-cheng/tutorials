@@ -34,8 +34,9 @@ l1, = plt.plot(x, y1, label='linear line')
 l2, = plt.plot(x, y2, color='red', linewidth=1.0, linestyle='--', label='square line')
 
 plt.legend(loc='upper right')
-# plt.legend(handles=[l1, l2], labels=['up', 'down'],  loc='best')
-# the "," is very important in here l1, = plt... and l2, = plt... for this step
+# plt.legend(handles=[l1, l2], labels=['up', 'down'],  loc='best')#loc='best'/0(docstring所示)表示在全图寻找最佳位置放置legend图例
+# the "," is very important in here l1, = plt... and l2, = plt... for this step#注意l1 l2后要加逗号
+#关于legend用法 loc函数的参数，位置选择问题，下面docstring所举
 """legend( handles=(line1, line2, line3),
            labels=('label1', 'label2', 'label3'),
            'upper right')
