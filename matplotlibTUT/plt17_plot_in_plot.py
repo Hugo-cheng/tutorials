@@ -35,7 +35,7 @@ ax2.set_title('title inside 1')
 # different method to add axes
 ####################################
 plt.axes([0.6, 0.2, 0.25, 0.25])
-plt.plot(y[::-1], x, 'g')
+plt.plot(y[::-1], x, 'g')#y[::-1]从后往前，间隔-1；逆序排列
 plt.xlabel('x')
 plt.ylabel('y')
 plt.title('title inside 2')
