@@ -25,7 +25,7 @@ ax.spines['right'].set_color('none')
 ax.spines['top'].set_color('none')
 ax.spines['top'].set_color('none')
 ax.xaxis.set_ticks_position('bottom')
-ax.spines['bottom'].set_position(('data', 0))
+ax.spines['bottom'].set_position(('data', 0)) 
 ax.yaxis.set_ticks_position('left')
 ax.spines['left'].set_position(('data', 0))
 
@@ -33,5 +33,5 @@ ax.spines['left'].set_position(('data', 0))
 for label in ax.get_xticklabels() + ax.get_yticklabels():
     label.set_fontsize(12)
     # set zorder for ordering the plot in plt 2.0.2 or higher
-    label.set_bbox(dict(facecolor='white', edgecolor='none', alpha=0.8, zorder=2))
+    label.set_bbox(dict(facecolor='white', edgecolor='none', alpha=0.8, zorder=2))#alpha的值代表透明度 zorder设置图层顺序
 plt.show()
