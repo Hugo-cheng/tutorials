@@ -29,7 +29,8 @@ plt.plot([0, 1], [0, 3])
 plt.subplot(224)
 plt.plot([0, 1], [0, 4])
 
-plt.tight_layout()
+plt.tight_layout()#Automatically adjust subplot parameters to give specified padding.
+#https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.tight_layout.html
 
 # example 2:
 ###############################
